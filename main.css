@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #5f27cd;
+    padding: 16px 0px;
+    color: #fff;
+    display: flex;
+    border-bottom: 14px solid #471c9b;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button{
+    margin-left: 14px;
+    padding: 0px 10px;
+}
+
+form{
+    background-color: #5e27cd1a;
+    padding: 24px 0px;
+    text-align: center;
+    display: none;
+}
+
+form h2{
+    margin-bottom: 14px;
+}
+
+form input,
+form button{
+    padding: 10px;
+}
+
+button{
+    border: none;
+    background-color: rgb(28, 170, 123);
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 23px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(45, 219, 161);
+}
+
+#botao-cancelar{
+    order: none;
+    background-color: rgb(170, 56, 28);
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 23px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#botao-cancelar:hover{
+    background-color: rgb(218, 74, 38);
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img{
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+}
+
+.overlay-link{
+    padding: 16px;
+    background-color: #00000041;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 98%;
+    opacity: 0;
+    transition: all ease .2s;
+}
+
+.overlay-link a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-link{
+    opacity: 1;
+}
